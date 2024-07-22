@@ -9,3 +9,18 @@ body {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  height: 40px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0046f4;
+}

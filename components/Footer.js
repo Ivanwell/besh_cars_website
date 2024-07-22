@@ -1,7 +1,30 @@
 import styles from '../app/page.module.css'
 
 const Footer = () => {
-  return <div className={styles.footer_cont}></div>
+  return (
+    <div className={styles.footer_cont}>
+      <div className={styles.footer_wrap}>
+        <div className={styles.footer_row}>
+          <h4>Наші контакти</h4>
+          <span>beshcars@gmail.com</span>
+          <span>(093) 739 66 20</span>
+        </div>
+        <div className={styles.footer_row}>
+          <h4>Ми у соц мережах</h4>
+          <span>instagram</span>
+          <span>facebook</span>
+          <span>tiktok</span>
+        </div>
+        <div className={styles.footer_row}>
+          <h4>Є ще запитання?</h4>
+          <span>Залишити заявку</span>
+        </div>
+        <div className={styles.footer_row}>
+          <img className={styles.logo_footer} src="/logo_new.svg" />
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Footer

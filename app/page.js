@@ -3,7 +3,7 @@
 import styles from './page.module.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Link from 'next/link'
+import { check, rightDownArr } from '@/components/icons'
 
 export default function Home() {
   const scrolltoHash = function (element_id) {
@@ -19,19 +19,25 @@ export default function Home() {
       <Header />
       <div className={styles.page_container}>
         <section className={styles.welcome_section}>
-          <div className={styles.left_part}>
-            <div className={styles.main_title}>
-              Лише <span className={styles.blue_font}>перевірені</span> та
-              підготовлені авто
+          <div className={styles.welcome_wrap}>
+            <div className={styles.left_part}>
+              <div className={styles.main_title}>
+                Лише <span className={styles.blue_font}>перевірені</span> та
+                підготовлені авто
+              </div>
+              <span className={styles.choose_option}>
+                Дізнайтесь більше про нас та наші послуги{rightDownArr}
+              </span>
             </div>
-            <span className={styles.choose_option}>
-              Оберіть послугу яка Вас цікавить
-            </span>
+            <div className={styles.right_part}>
+              <div className={styles.car_background}></div>
+              <div className={styles.approv_besh}>
+                {check} Перевірено BESHCARS
+              </div>
+              <img className={styles.main_car} src="/g30.png" />
+            </div>
           </div>
-          <div className={styles.right_part}>
-            <div className={styles.car_background}></div>
-            <img className={styles.main_car} src="/main_car.png" />
-          </div>
+
           <div className={styles.our_services}>
             <button className={styles.service_btn}>Наші авто</button>
             <button
@@ -47,6 +53,12 @@ export default function Home() {
               Підбір авто
             </button>
             <button
+              onClick={() => scrolltoHash('comision')}
+              className={styles.service_btn}
+            >
+              Комісія
+            </button>
+            <button
               onClick={() => scrolltoHash('trade')}
               className={styles.service_btn}
             >
@@ -55,12 +67,12 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className={styles.devider} id="sale">
-        <span className={styles._props}>10 років досвіду</span>
-        <div className={styles.devide_line}></div>
-        <span className={styles._props}>Власний автомайданчик</span>
-        <div className={styles.devide_line}></div>
-        <span className={styles._props}>Перевірені авто</span>
+      <div className={styles.devider_small} id="sale">
+        <span className={styles._props_blue}>10 років досвіду</span>
+        <div className={styles.devide_line_blue}></div>
+        <span className={styles._props_blue}>Власний автомайданчик</span>
+        <div className={styles.devide_line_blue}></div>
+        <span className={styles._props_blue}>Перевірені авто</span>
       </div>
       <div className={styles.page_container}>
         <section className={styles.service_section}>
@@ -83,18 +95,18 @@ export default function Home() {
             </div>
 
             <div className={styles.image_container}>
-              <img className={styles.service_image} src="/park.jpg" />
+              <img className={styles.service_image} src="/calculator.jpg" />
             </div>
           </div>
         </section>
       </div>
 
-      <div className={styles.devider_small} id="buy">
-        <span className={styles._props_blue}>Вигідно</span>
-        <div className={styles.devide_line_blue}></div>
-        <span className={styles._props_blue}>Зручно</span>
-        <div className={styles.devide_line_blue}></div>
-        <span className={styles._props_blue}>Швидко</span>
+      <div className={styles.devider} id="buy">
+        <span className={styles._props}>Вигідно</span>
+        <div className={styles.devide_line}></div>
+        <span className={styles._props}>Зручно</span>
+        <div className={styles.devide_line}></div>
+        <span className={styles._props}>Швидко</span>
       </div>
       <div className={styles.page_container}>
         <section className={styles.service_section}>
@@ -117,17 +129,17 @@ export default function Home() {
             </div>
 
             <div className={styles.image_container}>
-              <img className={styles.service_image} src="/box.jpg" />
+              <img className={styles.service_image} src="/pidbir.jpg" />
             </div>
           </div>
         </section>
       </div>
-      <div className={styles.devider}>
-        <span className={styles._props}>Підготуємо</span>
-        <div className={styles.devide_line}></div>
-        <span className={styles._props}>Продамо</span>
-        <div className={styles.devide_line}></div>
-        <span className={styles._props}>Оформимо</span>
+      <div className={styles.devider_small} id="comision">
+        <span className={styles._props_blue}>Підготуємо</span>
+        <div className={styles.devide_line_blue}></div>
+        <span className={styles._props_blue}>Продамо</span>
+        <div className={styles.devide_line_blue}></div>
+        <span className={styles._props_blue}>Оформимо</span>
       </div>
       <div className={styles.page_container}>
         <section className={styles.service_section}>
@@ -150,17 +162,17 @@ export default function Home() {
             </div>
 
             <div className={styles.image_container}>
-              <img className={styles.service_image} src="/park_big.jpg" />
+              <img className={styles.service_image} src="/sale.jpg" />
             </div>
           </div>
         </section>
       </div>
-      <div className={styles.devider_small} id="trade">
-        <span className={styles._props_blue}>Обмін за 1 день</span>
-        <div className={styles.devide_line_blue}></div>
-        <span className={styles._props_blue}>Ваша або наша доплата</span>
-        <div className={styles.devide_line_blue}></div>
-        <span className={styles._props_blue}>Адекватна оцінка</span>
+      <div className={styles.devider} id="trade">
+        <span className={styles._props}>Обмін за 1 день</span>
+        <div className={styles.devide_line}></div>
+        <span className={styles._props}>Ваша або наша доплата</span>
+        <div className={styles.devide_line}></div>
+        <span className={styles._props}>Адекватна оцінка</span>
       </div>
       <div className={styles.page_container}>
         <section className={styles.service_section}>
@@ -183,6 +195,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+
       <Footer />
     </main>
   )
