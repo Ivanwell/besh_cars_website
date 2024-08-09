@@ -71,6 +71,10 @@ export default function Home() {
         <HeaderMobile />
         <FirstSectionMobile />
         <ServiceSectionMobile service={services.sales} />
+        <ServiceSectionMobile service={services.select} />
+        <ServiceSectionMobile service={services.comision} />
+        <ServiceSectionMobile service={services.trade} />
+        <Footer />
       </main>
     </>
   )
