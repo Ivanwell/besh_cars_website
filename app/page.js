@@ -11,6 +11,7 @@ import RequestForm from '@/components/RequestForm'
 import { services } from '@/lib/content'
 import FirstSection from '@/components/FirstSection'
 import FirstSectionMobile from '@/components/FirstSectionMobile'
+import ServiceSectionMobile from '@/components/ServiceSectionMobile'
 
 export default function Home() {
   const [openedRequest, setOpenRequest] = useState({
@@ -69,6 +70,7 @@ export default function Home() {
       <main className={styles.main_mobile}>
         <HeaderMobile />
         <FirstSectionMobile />
+        <ServiceSectionMobile service={services.sales} />
       </main>
     </>
   )

@@ -27,15 +27,15 @@ const FirstSectionMobile = () => {
       <div className={styles.reviews_descr}>
         Підтвердженні відгуки від наших клієнтів
       </div>
-      <div className={styles.services_list}>
+      <div className={styles.services_list} id="services_mobile">
         <span className={styles.title_service}>
           Дізнайтесь більше про нас та наші послуги
         </span>
-        <button className={styles.service_btn}>Наші авто</button>
-        <button className={styles.service_btn}>Викуп авто</button>
-        <button className={styles.service_btn}>Підбір авто</button>
-        <button className={styles.service_btn}>Комісія</button>
-        <button className={styles.service_btn}>Обмін Trade-IN</button>
+        <button className={styles.service_btn_mobile}>Наші авто</button>
+        <button className={styles.service_btn_mobile}>Викуп авто</button>
+        <button className={styles.service_btn_mobile}>Підбір авто</button>
+        <button className={styles.service_btn_mobile}>Комісія</button>
+        <button className={styles.service_btn_mobile}>Обмін Trade-IN</button>
       </div>
     </div>
   )

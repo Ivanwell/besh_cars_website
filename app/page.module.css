@@ -881,9 +881,14 @@
     justify-content: center;
   }
 
-  .service_btn {
+  .service_btn_mobile {
     width: 80%;
     height: 50px;
+    background-color: white;
+    border: none;
+    color: #000c29;
+    font-size: 20px;
+    border-radius: 5px;
   }
 
   .title_service {
@@ -896,5 +901,26 @@
     box-sizing: border-box;
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  .service_mobile_cont {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title_service_mobile {
+    font-size: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .image_mobile {
+    width: 90%;
+    border-radius: 20px;
   }
 }

@@ -40,6 +40,7 @@ const RequestForm = ({ id, handleCloseRequest }) => {
       .then(response => {
         setLoading(false)
         setResult('ok')
+        setFormData({ phone: '', name: '', comment: '' })
         return response.data
       })
       .catch(error => {
