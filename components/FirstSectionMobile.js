@@ -22,20 +22,28 @@ const FirstSectionMobile = () => {
         {star}
         {star}
         {star}
-        <span className={styles.review_mark}>(4.9)</span>
+        <span className={styles.review_mark}>4.9</span>
       </div>
       <div className={styles.reviews_descr}>
         Підтвердженні відгуки від наших клієнтів
       </div>
+      <a
+        href="https://auto.ria.com/uk/dealers/beshcars/3708/"
+        target="_blank"
+        className={styles.in_stock_btn}
+      >
+        Авто в наявності
+      </a>
       <div className={styles.services_list} id="services_mobile">
         <span className={styles.title_service}>
           Дізнайтесь більше про нас та наші послуги
         </span>
-        <button className={styles.service_btn_mobile}>Наші авто</button>
-        <button className={styles.service_btn_mobile}>Викуп авто</button>
-        <button className={styles.service_btn_mobile}>Підбір авто</button>
-        <button className={styles.service_btn_mobile}>Комісія</button>
-        <button className={styles.service_btn_mobile}>Обмін Trade-IN</button>
+        <div className={styles.table_services}>
+          <button className={styles.service_btn_mobile}>Викуп авто</button>
+          <button className={styles.service_btn_mobile}>Підбір авто</button>
+          <button className={styles.service_btn_mobile}>Комісія</button>
+          <button className={styles.service_btn_mobile}>Обмін Trade-IN</button>
+        </div>
       </div>
     </div>
   )
