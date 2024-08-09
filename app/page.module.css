@@ -43,6 +43,12 @@
   margin-bottom: 20px;
 }
 
+.bif_font {
+  font-size: 26px;
+  color: #000c29;
+  font-weight: 700;
+}
+
 .left_part {
   width: 50%;
   height: 100%;
@@ -749,11 +755,12 @@
   display: flex;
   gap: 1px;
   padding-left: 30px;
-  align-items: center;
-  text-indent: 15px;
+  align-items: flex-end;
+  text-indent: 10px;
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
+  color: #878484;
 }
 
 .reviews_cont svg {

@@ -34,7 +34,8 @@ const FirstSection = () => {
               {star}
               {star}
               {star}
-              4.9 відгуки наших клієнтів
+              <span className={styles.bif_font}>4.9</span>{' '}
+              <i>відгуки наших клієнтів</i>
             </div>
             <span className={styles.choose_option}>
               Дізнайтесь більше про нас та наші послуги{rightDownArr}
