@@ -13,6 +13,10 @@
   display: none;
 }
 
+.footer_cont_mobile {
+  display: none;
+}
+
 .page_container {
   width: 75%;
   height: 100%;
@@ -995,10 +999,15 @@
   }
 
   .pron_mobile {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: #0046f4 2px solid;
-    border-radius: 20px;
+    height: 40px;
+    border-radius: 30px;
     color: #0046f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .question_title {
