@@ -58,8 +58,7 @@ export default function Home() {
           open={openedRequest.opened}
           onClose={handleCloseRequest}
           aria-describedby="alert-dialog-slide-description"
-          maxWidth="xl"
-          scroll="body"
+          fullWidth={true}
         >
           <RequestForm
             id={openedRequest.id}
@@ -70,10 +69,22 @@ export default function Home() {
       <main className={styles.main_mobile}>
         <HeaderMobile />
         <FirstSectionMobile />
-        <ServiceSectionMobile service={services.sales} />
-        <ServiceSectionMobile service={services.select} />
-        <ServiceSectionMobile service={services.comision} />
-        <ServiceSectionMobile service={services.trade} />
+        <ServiceSectionMobile
+          service={services.sales}
+          handleOpenRequest={handleOpenRequest}
+        />
+        <ServiceSectionMobile
+          service={services.select}
+          handleOpenRequest={handleOpenRequest}
+        />
+        <ServiceSectionMobile
+          service={services.comision}
+          handleOpenRequest={handleOpenRequest}
+        />
+        <ServiceSectionMobile
+          service={services.trade}
+          handleOpenRequest={handleOpenRequest}
+        />
         <Footer />
       </main>
     </>

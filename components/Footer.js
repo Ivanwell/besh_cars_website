@@ -28,8 +28,13 @@ const Footer = ({ handleOpenRequest }) => {
         </div>
       </div>
       <div className={styles.footer_cont_mobile}>
-        {' '}
+        <a href="/contacts" className={styles.footer_contacts}>
+          Контакти
+        </a>
         <img className={styles.logo_footer} src="/logo_new.svg" />
+        <span className={styles.footer_rights}>
+          © 2024 всі права захищені.{' '}
+        </span>
       </div>
     </>
   )

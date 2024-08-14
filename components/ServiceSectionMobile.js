@@ -14,7 +14,7 @@ const ServiceSectionMobile = ({ service, handleOpenRequest }) => {
   } = service
   const titleRes = titleText()
   return (
-    <div className={styles.service_mobile_cont}>
+    <div className={styles.service_mobile_cont} id={`${id}_mobile`}>
       <div className={styles.title_service_direct}>{titleRes}</div>
 
       <img className={styles.image_mobile} src={image} />
@@ -25,6 +25,12 @@ const ServiceSectionMobile = ({ service, handleOpenRequest }) => {
       </div>
       <span className={styles.question_title}>{titleDescription}</span>
       <p className={styles.description_mobile}>{description}</p>
+      <button
+        className={styles.leave_request_mobile}
+        onClick={() => handleOpenRequest(ukrName)}
+      >
+        Залишити заявку
+      </button>
       <div className={styles.diveder_mobile}></div>
     </div>
   )

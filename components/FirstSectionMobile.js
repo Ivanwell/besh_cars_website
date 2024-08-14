@@ -16,7 +16,15 @@ const FirstSectionMobile = () => {
       <div className={styles.page_container_mobile}>
         <img className={styles.main_car} src="/g30.png" />
       </div>
-      <div className={styles.stars}>
+      <div
+        className={styles.stars}
+        onClick={() =>
+          window.open(
+            'https://www.google.com/search?q=beshcars&oq=beshcars&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgoIARAAGIAEGKIEMgoIAhAAGIAEGKIEMgoIAxAAGIAEGKIEMgoIBBAAGIAEGKIEMgYIBRBFGDsyBggGEEUYPDIGCAcQRRg80gEINDI2MmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x473ae7a770f3bc51:0x9ae7b09da0b17c24,1,,,,',
+            '_ blank'
+          )
+        }
+      >
         {star}
         {star}
         {star}
@@ -24,7 +32,15 @@ const FirstSectionMobile = () => {
         {star}
         <span className={styles.review_mark}>4.9</span>
       </div>
-      <div className={styles.reviews_descr}>
+      <div
+        className={styles.reviews_descr}
+        onClick={() =>
+          window.open(
+            'https://www.google.com/search?q=beshcars&oq=beshcars&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgoIARAAGIAEGKIEMgoIAhAAGIAEGKIEMgoIAxAAGIAEGKIEMgoIBBAAGIAEGKIEMgYIBRBFGDsyBggGEEUYPDIGCAcQRRg80gEINDI2MmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x473ae7a770f3bc51:0x9ae7b09da0b17c24,1,,,,',
+            '_ blank'
+          )
+        }
+      >
         Підтвердженні відгуки від наших клієнтів
       </div>
       <a
@@ -39,10 +55,30 @@ const FirstSectionMobile = () => {
           Дізнайтесь більше про нас та наші послуги
         </span>
         <div className={styles.table_services}>
-          <button className={styles.service_btn_mobile}>Викуп авто</button>
-          <button className={styles.service_btn_mobile}>Підбір авто</button>
-          <button className={styles.service_btn_mobile}>Комісія</button>
-          <button className={styles.service_btn_mobile}>Обмін Trade-IN</button>
+          <button
+            className={styles.service_btn_mobile}
+            onClick={() => scrolltoHash('sale_mobile')}
+          >
+            Викуп авто
+          </button>
+          <button
+            className={styles.service_btn_mobile}
+            onClick={() => scrolltoHash('select_mobile')}
+          >
+            Підбір авто
+          </button>
+          <button
+            className={styles.service_btn_mobile}
+            onClick={() => scrolltoHash('comision_mobile')}
+          >
+            Комісія
+          </button>
+          <button
+            className={styles.service_btn_mobile}
+            onClick={() => scrolltoHash('trade_mobile')}
+          >
+            Обмін Trade-IN
+          </button>
         </div>
       </div>
     </div>
