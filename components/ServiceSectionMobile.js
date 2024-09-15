@@ -1,5 +1,4 @@
 import styles from '../app/page.module.css'
-import { arrowRight } from './icons'
 
 const ServiceSectionMobile = ({ service, handleOpenRequest }) => {
   const {

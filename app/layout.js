@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 export const metadata = {
@@ -17,6 +18,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiWi938y3SQhv0k_Bd3CTi3C0VYWCZUqQ&libraries=places&callback=initMap"
+        async
+      ></Script>
       <body>{children}</body>
     </html>
   )

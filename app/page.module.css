@@ -465,13 +465,19 @@
 
 .dialog {
   width: 500px;
-  height: 500px;
+  min-height: 500px;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   position: relative;
+}
+
+.dialog_style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close_cont {
@@ -577,6 +583,8 @@
 .title_service {
   width: 100%;
   font-size: 45px;
+  border-left: #0046f4 5px solid;
+  padding-left: 25px;
 }
 
 .service_right {
@@ -673,6 +681,18 @@
   font-size: 18px;
   color: red;
   text-align: center;
+}
+
+.map_container {
+  width: 100%;
+  height: 450px;
+  border: none;
+  padding: 20px;
+}
+
+.map_box {
+  border-radius: 20px;
+  border: 2px solid #0046f4;
 }
 
 @keyframes rotate {
@@ -958,6 +978,7 @@
     box-sizing: border-box;
     padding-left: 5px;
     padding-right: 5px;
+    border: none;
   }
 
   .service_mobile_cont {
@@ -970,6 +991,7 @@
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
+    justify-content: space-between;
   }
 
   .diveder_mobile {
@@ -1060,6 +1082,7 @@
 
   .dialog {
     width: 80%;
+    min-height: 75vh;
   }
 
   .footer_contacts {
@@ -1090,5 +1113,11 @@
 
   .text_area_form {
     border: #0046f4 2px solid;
+  }
+
+  .map_box {
+    min-height: 300px;
+    margin-top: 20px;
+    border: #000c29 solid 1px;
   }
 }

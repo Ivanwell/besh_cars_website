@@ -12,6 +12,8 @@ import { services } from '@/lib/content'
 import FirstSection from '@/components/FirstSection'
 import FirstSectionMobile from '@/components/FirstSectionMobile'
 import ServiceSectionMobile from '@/components/ServiceSectionMobile'
+import MapSection from '@/components/MapSection'
+import MapSectionMobile from '@/components/MapSectionMobile'
 
 export default function Home() {
   const [openedRequest, setOpenRequest] = useState({
@@ -52,13 +54,14 @@ export default function Home() {
           service={services.trade}
           handleOpenRequest={handleOpenRequest}
         />
-
+        <MapSection handleOpenRequest={handleOpenRequest} />
         <Footer handleOpenRequest={handleOpenRequest} />
         <Dialog
           open={openedRequest.opened}
           onClose={handleCloseRequest}
           aria-describedby="alert-dialog-slide-description"
           fullWidth={true}
+          className={styles.dialog_style}
         >
           <RequestForm
             id={openedRequest.id}
@@ -85,6 +88,7 @@ export default function Home() {
           service={services.trade}
           handleOpenRequest={handleOpenRequest}
         />
+        <MapSectionMobile handleOpenRequest={handleOpenRequest} />
         <Footer />
       </main>
     </>
