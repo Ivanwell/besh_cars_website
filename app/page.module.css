@@ -321,7 +321,7 @@
 }
 
 .logo_footer {
-  max-width: 90%;
+  max-width: 70%;
 }
 
 .logo {
@@ -479,7 +479,6 @@
 
 .dialog {
   width: 500px;
-  min-height: 500px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -492,6 +491,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .close_cont {
@@ -513,6 +513,10 @@
   position: absolute;
   top: 0px;
   left: 20px;
+}
+
+.logo_form_request {
+  max-width: 50%;
 }
 
 .label_and_input_box {
@@ -653,7 +657,7 @@
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .pron {
@@ -1042,7 +1046,7 @@
   .prons_list {
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
     row-gap: 10px;
     flex-wrap: wrap;
     padding-top: 10px;
@@ -1087,19 +1091,33 @@
 
   .footer_cont_mobile {
     height: 100%;
-    min-height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 90px;
+    max-height: 200px;
     background-color: #0046f4;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     position: relative;
+    max-width: 100%;
+    max-width: 100vw;
   }
 
   .dialog {
-    width: 80%;
-    min-height: 75vh;
+    width: calc(100vw - 105px);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: min-content;
+    gap: 15px;
+    row-gap: 15px;
   }
 
   .footer_contacts {
@@ -1112,7 +1130,6 @@
   }
 
   .footer_rights {
-    position: absolute;
     color: white;
     font-weight: 700;
     text-decoration: none;

@@ -54,7 +54,7 @@ const RequestForm = ({ id, handleCloseRequest }) => {
       <div className={styles.close_cont} onClick={handleCloseRequest}>
         {close}
       </div>
-      <img className={styles.logo_form} src="/Logo_Beshcars_color.svg" />
+      <img className={styles.logo_form_request} src="/Logo_color.svg" />
       <div className={styles.label_and_input_box}>
         <label htmlFor="name">Ваше ім'я</label>
         <input
