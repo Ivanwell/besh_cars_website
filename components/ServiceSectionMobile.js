@@ -18,8 +18,10 @@ const ServiceSectionMobile = ({ service, handleOpenRequest }) => {
 
       <img className={styles.image_mobile} src={image} />
       <div className={styles.prons_list}>
-        {prons.map(pron => (
-          <div className={styles.pron_mobile}>{pron}</div>
+        {prons.map((pron, index) => (
+          <div key={`${index}-prons-mobile`} className={styles.pron_mobile}>
+            {pron}
+          </div>
         ))}
       </div>
       <span className={styles.question_title}>{titleDescription}</span>

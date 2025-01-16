@@ -5,7 +5,7 @@ import { telephon, instagram, youTube, tiktok, facebook } from './icons'
 const Header = () => {
   return (
     <div className={styles.header_cont}>
-      <img className={styles.logo} src="/Logo_Beshcars_color.svg" />
+      <img className={styles.logo} src="/Logo_color.svg" />
       <div className={styles.link_container}>
         <Link href={`/`}>Головна</Link>
         <Link href={`/about_us`}>Про нас</Link>
@@ -14,7 +14,9 @@ const Header = () => {
         <a target="_blank" href={`https://www.instagram.com/beshcars`}>
           {instagram}
         </a>
-        <Link href={`/`}>{youTube}</Link>
+        <a target="_blank" href={`https://www.youtube.com/@BESHCARS`}>
+          {youTube}
+        </a>
         <a target="_blank" href={`https://www.tiktok.com/@beshcars`}>
           {tiktok}
         </a>

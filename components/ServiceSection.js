@@ -36,9 +36,9 @@ const ServiceSection = ({ service, handleOpenRequest }) => {
           Залишити заявку
         </button>
         <div className={styles.prons_cont}>
-          {prons.map(pron => {
+          {prons.map((pron, index) => {
             return (
-              <div className={styles.pron}>
+              <div key={`${index}-prons`} className={styles.pron}>
                 {arrowRight}
                 {pron}
               </div>

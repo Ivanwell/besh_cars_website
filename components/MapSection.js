@@ -12,9 +12,9 @@ const MapSection = ({ handleOpenRequest }) => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.0358685108357!2d24.05937603075281!3d49.88802600742889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7a770f3bc51%3A0x9ae7b09da0b17c24!2sBESHCARS!5e0!3m2!1sen!2sua!4v1725108678703!5m2!1sen!2sua"
           width="100%"
           height="60%"
-          allowfullscreen="true"
+          allowFullScreen={true}
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           className={styles.map_box}
         ></iframe>
       </div>

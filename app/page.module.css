@@ -306,6 +306,20 @@
   gap: 5px;
 }
 
+.footer_row_new {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer_link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .logo_footer {
   max-width: 90%;
 }
@@ -825,17 +839,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
+    height: 100%;
   }
 
   .logo_mobile {
+    padding-top: 60px;
     width: 80%;
+    height: 100%;
+    padding-bottom: 70px;
   }
 
   .slogon {
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     font-size: 28px;
     font-weight: 700;
     color: #000c29;

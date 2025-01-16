@@ -1,6 +1,5 @@
 import styles from '../app/page.module.css'
-import Link from 'next/link'
-import { telephon, listCheck, youTube, tiktok, facebook } from './icons'
+import { telephon, listCheck } from './icons'
 
 const HeaderMobile = () => {
   const scrolltoHash = function (element_id) {
@@ -23,7 +22,7 @@ const HeaderMobile = () => {
       <a className={styles.phone_header} href="tel:+380937396620">
         {telephon}Зателефонувати
       </a>
-      <img className={styles.logo_mobile} src="/Logo_Beshcars_color.svg" />
+      <img className={styles.logo_mobile} src="/Logo_color.svg" />
       <span className={styles.slogon}>
         Лише <span className={styles.blue_font}>перевірені</span> авто
       </span>
